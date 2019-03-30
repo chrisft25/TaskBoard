@@ -3,31 +3,31 @@
                 {
                         "title":"Task 1",
                         "responsible": "Chris",
-                        "description": "Finish ReactJS Course",
+                        "description": "Study",
                         "priority":"low"
                 },
                 {
                         "title":"Task 2",
                         "responsible": "Chris",
-                        "description": "Finish ReactJS Course",
+                        "description": "Cook",
                         "priority":"low"
                 },
                 {
                         "title":"Task 3",
                         "responsible": "Chris",
-                        "description": "Finish ReactJS Course",
+                        "description": "Work out",
                         "priority":"medium"
                 },
                 {
                         "title":"Task 4",
                         "responsible": "Chris",
-                        "description": "Finish ReactJS Course",
+                        "description": "Drive",
                         "priority":"high"
                 },
                 {
                         "title":"Task 5",
                         "responsible": "Chris",
-                        "description": "Finish ReactJS Course",
+                        "description": "Sleep",
                         "priority":"high"
                 }
             ]
