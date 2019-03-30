@@ -1,25 +1,40 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Navigation from './components/Navigation';
+import { tasks } from './tasks.json';
+
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      tasks
+    }
+  }
+
+
   render() {
+    const tasks= this.state.tasks.map((tasks,i) =>{
+      return(
+        <div className="col-4">
+        <div className="card mt-4">
+        <div className="card-header"><h3>{tasks.title}</h3>
+        <span className="badge badge-pill badge-danger">{tasks.priority}</span></div>
+        <div className="card-body"><p>{tasks.description}</p><p><mark>{tasks.responsible}</mark></p></div>
+        </div>
+        </div>
+      )
+    });
     return (
       <div className="App">
-        <header className="App-header">
+          <Navigation title="Task Board" ntasks={this.state.tasks.length}/>
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edita <code>src/App.js</code> y guárdalo para recargar.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Aprende React
-          </a>
-        </header>
+          <div className="container">
+          <div className="row mt-4">
+          {tasks} 
+          </div>
+          </div>
       </div>
     );
   }
