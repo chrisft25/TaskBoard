@@ -2,7 +2,7 @@
   "name": "task-board",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chrisft25.github.io/taskboard",
+  "homepage": "https://chrisft25.github.io/TaskBoard",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
