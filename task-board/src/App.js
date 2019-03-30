@@ -12,6 +12,7 @@ class App extends Component {
     };
     this.handleAddTasks= this.handleAddTasks.bind(this);
   }
+  
   handleAddTasks(tasks){
     this.setState({
       tasks: [...this.state.tasks,tasks]
@@ -45,9 +46,6 @@ class App extends Component {
   }
 
   render() {
-   
-
-
     const tasks= this.state.tasks.map((tasks,i) =>{
       return(
         <div className="col-6 col-lg-4" key={i}>
@@ -60,6 +58,7 @@ class App extends Component {
         </div>
       )
     });
+
     return (
       <div className="App">
           <Navigation title="Task Board" ntasks={this.state.tasks.length}/>
