@@ -23,6 +23,12 @@
                         "responsible": "Chris",
                         "description": "Finish ReactJS Course",
                         "priority":"high"
+                },
+                {
+                        "title":"Task 5",
+                        "responsible": "Chris",
+                        "description": "Finish ReactJS Course",
+                        "priority":"high"
                 }
             ]
 }
