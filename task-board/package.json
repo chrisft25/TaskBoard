@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://chrisft25.github.io/TaskBoard",
+  "engines": {
+    "npm": "6.4.1",
+    "node": "10.13.0"
+},
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
